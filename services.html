@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="services.css">
+  <style>
+    /*for mobile design*/
+    @media only screen and (max-width:800px) {
+
+      .header {
+        -webkit-box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        -moz-box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        height: 80px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: -5%;
+        position: sticky;
+        top: 0;
+      }
+
+      .header a {
+        text-decoration: none;
+      }
+
+      .header .ip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header .info {
+        background-color: #130f40;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        width: 90%;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+      }
+
+      .header .info .icons img {
+        margin-left: 10%;
+        margin-top: 4%;
+      }
+
+      .header .info .nums {
+        margin-left: 5%;
+        margin-top: 2%;
+        width: 70%;
+        display: flex;
+      }
+
+      .header .info .nums a {
+        color: #fff;
+        margin-left: 3%;
+        font-size: 0.6rem;
+        margin-top: 2%;
+      }
+
+      .header .info .icons {
+        display: flex;
+        width: 30%;
+        margin-top: 3%;
+        margin-left: 2%;
+      }
+
+      .header .info .icons img {
+        height: 12px;
+        margin-top: 2%;
+        margin-left: 10px;
+      }
+
+      .q {
+        display: none;
+      }
+
+      .header .nav {
+        height: 40px;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header .nav .logo {
+        margin-top: 3%;
+      }
+
+      .header .nav .logo img {
+        height: 30px;
+      }
+
+      .header .nav .links {
+        width: 100%;
+        margin-left: 5%;
+      }
+
+      .header .nav .links a {
+
+        color: black;
+        font-size: 0.6rem;
+        margin-left: 3%;
+        font-weight: bolder;
+      }
+
+      .header .nav .contactBtn button {
+        display: none;
+      }
+
+      .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .services div {
+        height: 450px;
+        width: 80%;
+        border-radius: 2%;
+        margin-top: 8%;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(191, 181, 191, 1);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(191, 181, 191, 1);
+        box-shadow: 0px 2px 5px 0px rgba(191, 181, 191, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .services div h4 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: #1e272e;
+      }
+
+      .services div p {
+        text-align: center;
+        margin-top: 2%;
+        color: #2c3e50;
+      }
+
+      .services div button {
+        margin-top: 5%;
+        border: none;
+        background-color: #130f40;
+        color: #ecf0f1;
+        height: 35px;
+        width: 120px;
+        border-radius: 20px;
+      }
+
+      .si {
+        height: 200px;
+        margin-top: -1%;
+      }
+
+      h1 {
+        margin-top: 3%;
+        word-spacing: 0.3rem;
+        font-weight: bolder;
+        font-size: 2.5rem;
+      }
+
+      .round {
+        display: none;
+      }
+    }
+
+    /*for laptop design*/
+    @media only screen and (min-width:810px) {
+      .header .logo img {
+        height: 45px;
+        margin-left: 20%;
+      }
+
+      .header {
+        -webkit-box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        -moz-box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -0.8%;
+        position: sticky;
+      }
+
+      .header a {
+        text-decoration: none;
+      }
+
+      .header .ip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header .info {
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        width: 83%;
+        height: 50px;
+        background-color: #130f40;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+
+
+      .header .info .icons {
+        margin-left: 5%;
+        margin-right: 10%;
+        width: 50%;
+
+      }
+
+
+      .header .info .icons img {
+        margin-left: 10%;
+        margin-top: 3%;
+      }
+
+      .header .info .nums {
+        margin-right: 5%;
+        margin-top: 2%;
+        width: 40%;
+      }
+
+      .header .info .nums a {
+        color: #fff;
+        margin-left: 8%;
+      }
+
+      .header .info img {
+        height: 25px;
+        margin-top: -2%;
+      }
+
+      .header .nav {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2%;
+        margin-left: -6%;
+      }
+
+      .header .nav .logo {
+        margin-top: -1%;
+      }
+
+      .header .nav .links {
+        width: 50%;
+        margin-left: -14%;
+      }
+
+      .header .nav .links a {
+        margin-left: 5%;
+        color: black;
+        font-weight: bolder;
+      }
+
+      .header .nav .contactBtn button {
+        height: 30px;
+        width: 120%;
+        border: none;
+        background-color: #130f40;
+        color: #fff;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: -15%;
+      }
+
+      .services {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .services div {
+        height: 500px;
+        width: 25%;
+        border-radius: 2%;
+        margin-left: 5%;
+        margin-top: 8%;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(191, 181, 191, 1);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(191, 181, 191, 1);
+        box-shadow: 0px 2px 5px 0px rgba(191, 181, 191, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .services div h4 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: #1e272e;
+      }
+
+      .services div p {
+        text-align: center;
+        margin-top: 2%;
+        color: #2c3e50;
+      }
+
+      .services div button {
+        margin-top: 5%;
+        border: none;
+        background-color: #130f40;
+        color: #ecf0f1;
+        height: 35px;
+        width: 120px;
+        border-radius: 20px;
+      }
+
+      .si {
+        height: 250px;
+        width: 99%;
+        margin-top: -2%;
+      }
+
+      h1 {
+        margin-top: 3%;
+        word-spacing: 0.3rem;
+        font-weight: bolder;
+        font-size: 2.5rem;
+      }
+
+      .round {
+        display: none;
+      }
+
+      .nums {
+        display: flex;
+        margin-top: 2%;
+        width: 50%;
+        margin-left: -20%;
+      }
+
+      .nums div {
+        width: 100%
+      }
+
+      .nums div img {
+        height: 20px;
+
+      }
+
+      .nums a {
+        font-size: smaller;
+        color: #fff;
+        width: 100%;
+
+
+        @media only screen and (min-width: 1700px) and (max-width:1800px) {
+
+          .header .nav .links {
+            margin-left: -10%;
+          }
+
+          .header .nav .links a {
+            font-size: larger;
+          }
+        }
+
+      }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="ip">
+      <div class="info">
+        <div class="icons">
+          <a href="https://facebook.com" target="_blank"><img src="./assets/facebook-64.png" alt="" srcset=""></a>
+          <a href="https://linkedin.com" target="_blank"><img src="./assets/linkedin-3-64.png" alt="" srcset=""></a>
+          <a href="https://gmail.com" target="_blank"><img src="./assets/email-12-64.png" alt="" srcset=""></a>
+        </div>
+        <div class="nums" style="display: flex;">
+          <div style="display: flex;"> <img src="./assets/telephone-handle-silhouette.png" alt="" srcset=""> <a
+              href="tel:+917058271919"> +91 7058271919</a></div>
+          <div style="display: flex;"> <img src="./assets/email (1).png" alt="" srcset=""> <a
+              href="mailto:info@ensosar.com">info@ensosar.com</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="logo"><img src="./assets/ensologo1.jpg" alt="" srcset=""></div>
+      <div class="links"><a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="#">About</a>
+        <a href="#">Vendors</a>
+        <a href="contact.html">Contact us</a>
+      </div>
+
+    </div>
+  </div>
+  <h1 style="text-align: center;">Our <span style="color: #30336b;"> Services</span></h1>
+  <div class="services">
+    <div>
+      <img class="si" src="./assets/1.jpg" alt="">
+      <section class="round"><img class="rf" src="./assets/icons8-web-development-66.png" alt="" srcset=""></section>
+      <h4>Web Development</h4>
+      <p>Lorem ipsum dolor sit amet consus sectetur adipiscing elit sed do eius mod.</p>
+      <button>Learn More</button>
+    </div>
+    <div>
+      <img class="si" src="./assets/1.jpg" alt="">
+      <section class="round"><img class="rf" src="./assets/icons8-web-development-66.png" alt="" srcset=""></section>
+      <h4>Web Development</h4>
+      <p>Lorem ipsum dolor sit amet consus sectetur adipiscing elit sed do eius mod.</p>
+      <button>Learn More</button>
+    </div>
+    <div>
+      <img class="si" src="./assets/1.jpg" alt="">
+      <section class="round"><img class="rf" src="./assets/icons8-web-development-66.png" alt="" srcset=""></section>
+      <h4>Web Development</h4>
+      <p>Lorem ipsum dolor sit amet consus sectetur adipiscing elit sed do eius mod.</p>
+      <button>Learn More</button>
+    </div>
+    <div>
+      <img class="si" src="./assets/1.jpg" alt="">
+      <section class="round"><img class="rf" src="./assets/icons8-web-development-66.png" alt="" srcset=""></section>
+      <h4>Web Development</h4>
+      <p>Lorem ipsum dolor sit amet consus sectetur adipiscing elit sed do eius mod.</p>
+      <button>Learn More</button>
+    </div>
+    <div>
+      <img class="si" src="./assets/1.jpg" alt="">
+      <section class="round"><img class="rf" src="./assets/icons8-web-development-66.png" alt="" srcset=""></section>
+      <h4>Web Development</h4>
+      <p>Lorem ipsum dolor sit amet consus sectetur adipiscing elit sed do eius mod.</p>
+      <button>Learn More</button>
+    </div>
+    <div>
+      <img class="si" src="./assets/1.jpg" alt="">
+      <section class="round"><img class="rf" src="./assets/icons8-web-development-66.png" alt="" srcset=""></section>
+      <h4>Web Development</h4>
+      <p>Lorem ipsum dolor sit amet consus sectetur adipiscing elit sed do eius mod.</p>
+      <button>Learn More</button>
+    </div>
+    
+  </div>
+
+  <!--footer section-->
+  <div class="footer">
+    <div class="mainFooter">
+      <div class="inf">
+        <img src="./assets/ensologo2.png" alt="">
+        <h6>We help Enterprise customers with IT
+          infrastructure solution involving the
+          network , compute , storage ,
+          desktop / mobile devices and extend it
+          to the cloud
+        </h6>
+        <button>DISCOVER MORE</button>
+      </div>
+      <div class="contactInfo">
+        <h4>Ensosar locations</h4>
+        <div style="display: flex;">
+          <img class="fif" style="height: 20px; width: 20px; margin-top:2px;" src="./assets/location-pin.png" alt=""
+            srcset="">
+          <h5> Pune</h5>
+        </div>
+        <h6>
+          Dream Sky , Dhanori-Lohegaon
+          Rd, Kutwal colony , Pune ,
+          411047, MH India</h6>
+        <div style="display: flex;">
+          <img class="fif" style="height: 20px; width: 20px; margin-top:2px;" src="./assets/location-pin.png" alt=""
+            srcset="">
+          <h5> Pune</h5>
+        </div>
+        <h6>
+          Dream Sky , Dhanori-Lohegaon
+          Rd, Kutwal colony , Pune ,
+          411047, MH India</h6>
+        <div style="display: flex;" class="p">
+          <img class="fif" style="height: 20px; width: 20px; margin-top:2px;" src="./assets/phone-call.png" alt=""
+            srcset="">
+          <h5>Phone</h5>
+          <h6> 07058271919</h6>
+        </div>
+        <div style="display: flex;" class="e">
+          <img class="fif" style="height: 20px; width: 20px; margin-top:2px;" src="./assets/gmail-logo.png" alt=""
+            srcset="">
+          <h5>Email</h5>
+          <h6> info@ensosar.com</h6>
+        </div>
+
+      </div>
+      <div class="recentPro">
+        <h4>Our Expertise</h4>
+        <div>
+          <h6>Managed IT Services</h6>
+          <h6>IT security</h6>
+          <h6>Development</h6>
+          <h6>Cloud Transformation</h6>
+          <h6>H/W - S/W supply & Management</h6>
+          <h6>Networking</h6>
+          <h6>IT Consulting</h6>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="copyrightSec">
+      <div class="cr">
+        <p>© Copyright 2022 Sunmars. All Rights Reserved.</p>
+        <div class="icons">
+          <a href="https://facebook.com"> <img src="./assets/facebook-app-symbol.png" alt="" srcset=""></a>
+          <a href="https://instagram.com"> <img src="./assets/instagram.png" alt="" srcset=""></a>
+          <a href="https://gmail.com"> <img src="./assets/gmail-logo.png" alt="" srcset=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

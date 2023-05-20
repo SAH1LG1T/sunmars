@@ -1,0 +1,31 @@
+<style>
+    .blurred-background {
+      position: relative;
+      height: 300px;
+    }
+    
+    .blurred-background::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("./assets/WhatsApp\ Image\ 2023-02-05\ at\ 17.04.22.jpeg");
+      filter: blur(10px);
+      z-index: -1;
+    }
+    
+    .content {
+
+      padding: 20px;
+    }
+    </style>
+    
+    <div class="blurred-background">
+      <div class="content">
+        <!-- Your content goes here -->
+        <h1>gfggggh</h1>
+      </div>
+    </div>
+    

@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@100&display=swap"
+    rel="stylesheet">
+  <style>
+    /*for mobile design*/
+    @media only screen and (max-width:800px) {
+
+      .header {
+        -webkit-box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        -moz-box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        height: 80px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: -5%;
+        position: sticky;
+        top: 0;
+      }
+
+      .header a {
+        text-decoration: none;
+      }
+
+      .header .ip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header .info {
+        background-color: #130f40;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        width: 90%;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+      }
+
+      .header .info .icons img {
+        margin-left: 10%;
+        margin-top: 4%;
+      }
+
+      .header .info .nums {
+        margin-left: -2%;
+        margin-top: 2%;
+        width: 70%;
+        display: flex;
+      }
+
+      .header .info .nums a {
+        color: #fff;
+        margin-left: 3%;
+        font-size: 0.6rem;
+        margin-top: 2%;
+      }
+
+      .header .info .icons {
+        display: flex;
+        width: 30%;
+        margin-top: 3%;
+        margin-left: 2%;
+      }
+
+      .header .info .icons img {
+        height: 12px;
+        margin-top: 2%;
+        margin-left: 10px;
+      }
+
+      .q {
+        display: none;
+      }
+
+      .header .nav {
+        height: 40px;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header .nav .logo {
+        margin-top: 3%;
+      }
+
+      .header .nav .logo img {
+        height: 30px;
+      }
+
+      .header .nav .links {
+        width: 100%;
+        margin-left: 5%;
+      }
+
+      .header .nav .links a {
+
+        color: black;
+        font-size: 0.6rem;
+        margin-left: 3%;
+        font-weight: bolder;
+      }
+
+      .header .nav .contactBtn button {
+        display: none;
+      }
+
+      .header .ip .info .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+
+      .icons div {
+        height: 100px;
+        width: 150px;
+        margin-left: 5%;
+        margin-top: 2%;
+        border: 1px solid #ecf0f1;
+      }
+
+      img {
+        height: 50px;
+      }
+
+      .wel {
+        background-image: url(./assets/pexels-alex-andrews-821754.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+      }
+
+      .wel h1 {
+        color: #130f40;
+        font-size: 2rem;
+        margin-top: -10px;
+      }
+
+      .icons1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-right: 10%;
+      }
+.schedule{
+  text-align: center;
+  margin-top: 2%;
+}
+      .icons1 div {
+  
+        width: 100%;
+     
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .icons div img {
+        height: 50px;
+      }
+
+      .formI {
+        display: flex;
+
+
+        margin-top: 5%;
+      }
+
+      .formI img {
+        display: none;
+      }
+
+      .formsection {
+        height: 600px;
+        background-color: #130f40;
+        width: 100%;
+        color: #fff;
+      }
+
+      .formsection .inp1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+
+        flex-wrap: wrap;
+
+      }
+
+      .formsection h4,
+      h6 {
+        margin-left: 5%;
+        font-size: 1rem;
+        line-height: 0px;
+      }
+
+      .formsection h4 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+      }
+
+      .formsection input {
+        width: 85%;
+        height: 40px;
+        margin-left: 5%;
+        margin-top: 5%;
+        padding-left: 10px;
+      }
+
+      input[type="submit"] {
+        width: 30%;
+        height: 50px;
+
+        background-color: #1e3799;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .subscribeSec {
+        display: none;
+        margin-top: 10%;
+        height: 100px;
+        width: 100%;
+        background-color: #fff;
+
+        flex-direction: column;
+
+      }
+
+      .subscribeSec .heading {
+
+        color: #fff;
+
+        margin-left: 5%;
+        margin-top: 15%;
+      }
+
+      .subscribeSec .heading h2 {
+
+        font-size: 2rem;
+      }
+
+      .form {
+        margin-top: 2%;
+        margin-left: 5%;
+      }
+
+      .form input[type="submit"] {
+        height: 50px;
+        background-color: #1e3799;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .fi {
+        color: #363636;
+        width: 200px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 5px;
+        border-color: #ffffff;
+        background: #ffffff;
+      }
+
+      .inf {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 10%;
+      }
+
+      .inf img {
+        height: 50px;
+      }
+
+      .inf button {
+        width: 50%;
+        height: 50px;
+        margin-top: 5%;
+        border-radius: 5px;
+        background-color: #130f40;
+        font-size: 0.95rem;
+        border: none;
+        color: #fff;
+      }
+
+      .inf p {
+        line-height: 1.7rem;
+      }
+
+      .contactInfo {
+
+        margin-top: 5%;
+      }
+
+      .contactInfo h4 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.8rem;
+        margin-left: 1rem;
+      }
+
+
+      .contactInfo h6 {
+        margin-top: 8%;
+        font-family: "Poppins", sans-serif;
+        font-weight: lighter;
+        font-size: 1.0rem;
+      }
+
+      .recentPro {
+        display: none;
+        margin-left: 5%;
+        margin-top: 5%;
+      }
+
+      .recentPro div {
+        height: 150px;
+        margin-top: 10%;
+        width: 80%;
+        border: 1px solid #130f40;
+      }
+
+      .recentPro div h6 {
+
+        font-weight: bold;
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      .recentPro h6 {
+        margin-top: 8%;
+      }
+
+      .copyrightSec {
+
+        border-top: 1px solid gray;
+        margin-top: 5%;
+      }
+
+      .copyrightSec .cr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .copyrightSec .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .icons img {
+        height: 25px;
+        margin-top: 5px;
+        margin: 15px;
+      }
+
+      .container iframe {
+        width: 90%;
+        margin-left: 5%;
+      }
+    }
+
+    /*for laptop design*/
+
+    @media only screen and (min-width:810px) {
+
+      .header .logo img {
+        height: 40px;
+        margin-left: 85%;
+      }
+
+      .header {
+        -webkit-box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        -moz-box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        box-shadow: 0px 3px 5px -2px rgba(214, 207, 214, 1);
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -0.8%;
+        position: sticky;
+      }
+
+      .header a {
+        text-decoration: none;
+      }
+
+      .header .ip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header .info {
+        background-color: #130f40;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        width: 70%;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+      }
+
+      .header .info .icons {
+        margin-left: 5%;
+        width: 30%;
+
+      }
+
+      .header .info .icons img {
+        margin-left: 10%;
+        margin-top: 4%;
+      }
+
+      .header .info .nums {
+        margin-right: 5%;
+        margin-top: 2%;
+        width: 40%;
+      }
+
+      .header .info .nums a {
+        color: #fff;
+        margin-right: 5%;
+      }
+
+      .header .info img {
+        height: 25px;
+      }
+
+      .header .nav {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1%;
+        margin-right: 10%;
+      }
+
+      .header .nav .logo {
+        margin-top: -1%;
+      }
+
+      .header .nav .links {
+        width: 30%;
+margin-left: 20%;
+      }
+
+      .header .nav .links a {
+        margin-left: 5%;
+        color: black;
+        font-weight: bolder;
+      }
+
+      .header .nav .contactBtn button {
+        height: 30px;
+        width: 120%;
+        border: none;
+        background-color: #130f40;
+        ;
+        color: #fff;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: -15%;
+      }
+
+      .icons1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ height: 200px;
+ padding-top: 30px;
+ padding-bottom: 30px;
+        background-color: #130f40;
+      margin-top: 2px;
+      }
+
+      .icons1 div {
+        
+        margin-left: 5%;
+        
+        background-color: transparent;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .icons1 .mail img{
+    
+      }
+.icons1 .num{
+  margin-top: 6%;
+}
+.icons1 .add1{
+  margin-top: 3%;
+}
+
+      .icons1 div img {
+        height: 40px;
+          background-color: #fff;
+        padding: 20px;
+      }
+      .icons1 p{
+        margin-top:25%;
+font-size: small;
+      color: #fff;
+      }
+
+      .wel {
+        background-image: url(./assets/pexels-alex-andrews-821754.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+      }
+
+      .wel h1 {
+        color: #000;
+        margin-top: -10px;
+        font-size: 4rem;
+      }
+
+      .img img {
+        height: 600px;
+      }
+
+      .formI {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   
+        margin-top: 0;
+      }
+#mapDiv{
+  width: 100%;
+}
+      .formsection {
+        height: 600px;
+        background-color: #130f40;
+        width: 100%;
+        color: #fff;
+      }
+
+      .formsection .inp1 {
+        display: flex;
+        width: 60%;
+        margin-left: 1.1%;
+
+        flex-wrap: wrap;
+
+      }
+
+      .formsection h4,
+      h6 {
+        margin-left: 10%;
+        font-size: x-large;
+        line-height: 0px;
+      }
+
+      .formsection h4 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+      }
+.schedule{
+  color:white;
+  position: absolute;
+  top:96%;
+  text-align: center;
+  
+  width: 100%;
+}
+      .subscribeSec {
+        display: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #130f40;
+        color: #fff;
+        height: 150px;
+        margin-top: 1%;
+
+      }
+
+      .subscribeSec .heading {
+        width: 55%;
+        margin-left: 5%;
+      }
+
+      .subscribeSec h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-left: 10%;
+      }
+
+      .form {
+        width: 45%;
+      }
+
+      .fi {
+        color: #363636;
+        width: 350px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 5px;
+        border-color: #ffffff;
+        background: #ffffff;
+      }
+
+      input[type="submit"] {
+        height: 50px;
+        width: 120px;
+        background-color: #1e3799;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .img2 {
+        height: 600px;
+      }
+
+      .img2 img {
+        display: none;
+        width: 50%;
+      }
+
+      .ni {
+        height: 200px;
+        margin-top: -20%;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        
+        background-color: gray;
+        color: #fff;
+      }
+
+      .copyrightSec {
+        border-top: 2px solid gray;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 8%;
+
+      }
+
+      .copyrightSec div {
+        display: flex;
+        justify-content: space-around;
+
+      }
+
+      .mainFooter {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .mainFooter .inf {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5%;
+        width: 20%;
+      }
+
+      .contactInfo h4 {
+        font-size: 1.8rem;
+      }
+
+      .contactInfo h6 {
+        font-size: 1.3rem;
+        margin-left: 2%;
+      }
+
+      /* .recentPro h6 {
+        font-size: 1.3rem;
+      }
+
+      .recentPro h4 {
+        font-size: 1.8rem;
+      } */
+
+      .recentPro h4 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.8rem;
+      }
+
+      .recentPro h6 {
+        font-family: "Poppins", sans-serif;
+        font-weight: lighter;
+        font-size: 1.0rem;
+      }
+
+      .inf button {
+        width: 60%;
+        height: 50px;
+        margin-top: 5%;
+        border-radius: 5px;
+        background-color: #130f40;
+        font-size: 0.95rem;
+        border: none;
+        color: #fff;
+      }
+
+      .inf p {
+        margin-top: 5%;
+        line-height: 1.7rem;
+      }
+
+      .mainFooter img {
+        margin-top: -5%;
+        height: 50px;
+        width: 200px;
+        margin-left: -5%;
+
+      }
+
+      .icons img {
+        height: 30px;
+        margin-top: 5px;
+        margin: 15px;
+      }
+
+      .formsection input[type="text"] {
+        height: 50px;
+        width: 200px;
+        margin-top: 5%;
+        margin-left: 10%;
+      }
+
+      .formsection input[type="submit"] {
+        margin-left: 10%;
+        margin-top: 5%;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+
+      }
+
+      .container iframe {
+        border: 10px solid grey;
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 810px) and (max-width:1700px) {
+        .schedule{
+          top:80%;
+        }
+        .formsection .inp1 {
+          width: 90%;
+        }
+
+        .header .nav .links {
+          width: 60%;
+        }
+
+        .contactInfo h4 {
+          font-family: "Poppins", sans-serif;
+          font-size: 1.8rem;
+        }
+
+
+        .contactInfo h6 {
+          margin-top: 8%;
+          font-family: "Poppins", sans-serif;
+          font-weight: lighter;
+          font-size: 1.0rem;
+        }
+      }
+
+      @media only screen and (min-width: 1700px) and (max-width:1800px) {
+        .schedule{
+          top:70%;
+        }
+        .m {
+          display: none;
+        }
+
+        .header .nav .links {
+          margin-left: -5%;
+          width: 50%;
+        }
+
+        .header .nav .links a {
+          font-size: larger;
+        }
+
+        input {
+          width: 300px;
+        }
+
+        .formsection .msg {
+          margin-left: -3%;
+        }
+
+        .contactInfo h4 {
+          font-family: "Poppins", sans-serif;
+          font-size: 1.8rem;
+        }
+
+
+        .contactInfo h6 {
+          margin-top: 8%;
+          font-family: "Poppins", sans-serif;
+          font-weight: lighter;
+          font-size: 1.0rem;
+        }
+      }
+
+      @media only screen and (min-width: 1800px) and (max-width:1900px) {
+        .schedule{
+          top:66%;
+        }
+        .header .nav .links {
+          margin-left: -5%;
+          width: 60%;
+        }
+
+        .header .nav .links a {
+          font-size: larger;
+        }
+
+        .formsection .msg {
+          margin-left: -3%;
+        }
+
+        .contactInfo h4 {
+          font-family: "Poppins", sans-serif;
+          font-size: 1.8rem;
+        }
+
+
+        .contactInfo h6 {
+          margin-top: 8%;
+          font-family: "Poppins", sans-serif;
+          font-weight: lighter;
+          font-size: 1.0rem;
+        }
+/* for screen 1500px -1600px*/
+
+      }
+
+      @media only screen and (min-width: 2000px) and (max-width:2100px) {
+        .formsection .msg {
+          margin-left: -3%;
+        }
+      }
+      @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .formsection input[type="text"]{
+     width: 150px;
+     height: 40px;
+  }
+  .schedule{
+          top:93%;
+        }
+}
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/27a6951199.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="co">
+    <div class="header">
+      <div class="ip">
+        <div class="info">
+          <div class="icons">
+
+            <img src="./assets/facebook-64.png" alt="" srcset="">
+            <img src="./assets/linkedin-3-64.png" alt="" srcset="">
+            <img src="./assets/email-12-64.png" alt="" srcset="">
+          </div>
+          <div class="nums">
+            <a href="tel:+917873767698">+91 7873767698</a> <a href="mailto:info@sunmars.com">info@sunmars.com</a>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="logo"><img src="./assets/ensologo1.jpg" alt="" srcset=""></div>
+        <div class="links"><a href="index.html">Home</a>
+          <a href="index.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="#">Solutions</a>
+          <a href="#">Consulting</a>
+          <a style="color: #130f40;" href="contact.html">Contact </a>
+        </div>
+        <a style="cursor: pointer;" href="contact.html">
+   
+        </a>
+      </div>
+    </div>
+    <div class="wel">
+      <h1 style="text-align: center;">Contact us</h1>
+    </div>
+    <div class="schedule">
+ SCHEDULE A FREE CONSULTATION
+    </div>
+    <div class="icons1">
+      <div class="mail">
+        <img src="./assets/24-7.png" alt="" srcset="">
+       <p>AVAILABLE 24X7</p>
+      </div>
+      <div class="num"> <img src="./assets/engineer.png" alt="" srcset="">
+   <p>MANAGED IT</p>
+      </div>
+      <div class="add"><img src="./assets/algorithm.png" alt="" srcset="">
+<p>IT SECUIRITY</p>
+      </div>
+      <div class="add1"><img src="./assets/devops.png" alt="" srcset="">
+<p>DevOps</p>
+      </div>
+    </div>
+    <div class="formI">
+      <div class="img">
+        <img src="./assets/left-img (1).jpg" alt="" srcset="">
+      </div>
+      <div class="formsection">
+        <h6>Lets Talk </h6>
+        <h4>Get In Touch</h4>
+        <form action="">
+          <div class="inp1">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Phone">
+            <input type="text" placeholder="Your Website">
+          </div>
+          <div class="msg">
+            <input class="msgInp" type="text" placeholder="message">
+          </div>
+          <input type="submit" value="SUBMIT">
+        </form>
+      </div>
+    </div>
+    <div class="map"></div>
+
+    <div class="container">
+      <iframe class="mapStyle"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.938381578295!2d73.80995471539799!3d18.486450087428896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfdbf735a1eb%3A0x9b1d19fbffb6d76f!2sSunMars%20IT%20Solutions!5e0!3m2!1sen!2sin!4v1673687603942!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- subscribe form section (email) -->
+    <div class="subscribeSec">
+      <div class="heading">
+        <h2>Newsletter Subscribe</h2>
+      </div>
+      <form class="form" onsubmit="sendSubscriptionEmail(); reset(); return false;">
+        <input class="fi" type="email" name="subscribe-email" id="subscribe-email" placeholder="Your Email Address">
+        <input type="submit" value="Subscribe" style="cursor: pointer;">
+      </form>
+    </div>
+    <!--footer section-->
+    <div class="footer">
+      <div class="mainFooter">
+        <div class="inf">
+          <img src="./assets/ensologo2.png" alt="">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quos consequatur sunt quae dignissimos
+            cumque
+            voluptatibus aliquid? Dolorem, commodi ipsam.</p>
+          <button>DISCOVER MORE</button>
+        </div>
+        <div class="contactInfo">
+          <h4>Contact Info</h4>
+
+          <h6>
+            (+880)173-9753105</h6>
+          <h6>support@rstheme.com</h6>
+          <h6>
+            10:00 - 17:00</h6>
+        </div>
+        <div class="recentPro">
+          <h4>Our Recent Project</h4>
+          <div>
+            <h6>Project 1</h6>
+          </div>
+          <div>
+            <h6>Project 2</h6>
+          </div>
+          <div>
+            <h6>Project 3</h6>
+          </div>
+
+        </div>
+      </div>
+      <div class="copyrightSec">
+        <div class="cr">
+          <p>© Copyright 2022 Sunmars. All Rights Reserved.</p>
+          <div class="icons">
+            <a href="#"> <img src="./assets/facebook-app-symbol.png" alt="" srcset=""></a>
+            <a href="#"> <img src="./assets/instagram.png" alt="" srcset=""></a>
+            <a href="#"> <img src="./assets/gmail-logo.png" alt="" srcset=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
